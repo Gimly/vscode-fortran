@@ -8,6 +8,7 @@
 		"vscode": "^0.10.1"
 	},
 	"categories": [
+		"Languages",
 		"Other"
 	],
 	"activationEvents": [
@@ -15,10 +16,61 @@
 	],
 	"main": "./out/src/extension",
 	"contributes": {
-		"commands": [{
-			"command": "extension.sayHello",
-			"title": "Hello World"
-		}]
+		"languages": [
+			{
+				"id": "fortran",
+				"aliases": [
+					"Fortran - Punchcard",
+					"fortran"
+				],
+				"extensions": [
+					".f",
+					".F",
+					".f77",
+					".F77",
+					".for",
+					".FOR",
+					".fpp",
+					".FPP"
+				],
+				"configuration": "./fortran.configuration.json"
+			},
+			{
+				"id": "fortran-modern",
+				"aliases": [
+					"Fortran - Modern"
+				],
+				"extensions": [
+					".f90",
+					".F90",
+					".f95",
+					".F95",
+					".f03",
+					".F03",
+					".f08",
+					".F08"
+				],
+				"configuration": "./modern.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "fortran-modern",
+				"scopeName": "source.fortran.modern",
+				"path": "./syntaxes/modern.tmLanguage"
+			},
+			{
+				"language": "fortran",
+				"scopeName": "source.fortran",
+				"path": "./syntaxes/fortran.tmLanguage"
+			}
+		],
+		"commands": [
+			{
+				"command": "extension.sayHello",
+				"title": "Hello World"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
