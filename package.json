@@ -3,18 +3,24 @@
 	"displayName": "fortran",
 	"description": "An extension for VS Code which provides support for the Fortran language.",
 	"version": "0.0.1",
-	"publisher": "gimly81",
+	"publisher": "Gimly81",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
 	"categories": [
-		"Languages",
-		"Other"
+		"Languages"
 	],
-	"activationEvents": [
-		"onCommand:extension.sayHello"
-	],
-	"main": "./out/src/extension",
+	"homepage": "https://github.com/Gimly/vscode-fortran/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Gimly/vscode-fortran.git"
+	},
+	// "activationEvents": [
+	// 	"onCommand:extension.sayHello"
+	// ],
+	// "main": "./out/src/extension",
+	"icon": "images/icon.png",
+	"bugs": "https://github.com/Gimly/vscode-fortran/issues",
 	"contributes": {
 		"languages": [
 			{
@@ -64,13 +70,13 @@
 				"scopeName": "source.fortran",
 				"path": "./syntaxes/fortran.tmLanguage"
 			}
-		],
-		"commands": [
-			{
-				"command": "extension.sayHello",
-				"title": "Hello World"
-			}
 		]
+		// "commands": [
+		// 	{
+		// 		"command": "extension.sayHello",
+		// 		"title": "Hello World"
+		// 	}
+		// ]
 	},
 	"scripts": {
 		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
