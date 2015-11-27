@@ -8,7 +8,8 @@
 		"vscode": "^0.10.1"
 	},
 	"categories": [
-		"Languages"
+		"Languages",
+		"Snippets"
 	],
 	"homepage": "https://github.com/Gimly/vscode-fortran/blob/master/README.md",
 	"repository": {
@@ -69,6 +70,12 @@
 				"language": "fortran",
 				"scopeName": "source.fortran",
 				"path": "./syntaxes/fortran.tmLanguage"
+			}
+		],
+		"snippets": [
+			{
+				"language": "fortran-modern",
+				"path": "./snippets/fortran.json"
 			}
 		]
 		// "commands": [
