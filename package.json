@@ -4,6 +4,7 @@
 	"description": "An extension for VS Code which provides support for the Fortran language.",
 	"version": "0.0.1",
 	"publisher": "Gimly81",
+	"license": "SEE LICENSE IN LICENSE.md",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
