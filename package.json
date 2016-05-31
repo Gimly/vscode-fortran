@@ -1,87 +1,87 @@
 {
-	"name": "fortran",
-	"displayName": "fortran",
-	"description": "An extension for VS Code which provides support for the Fortran language.",
-	"version": "0.0.1",
-	"publisher": "Gimly81",
-	"license": "SEE LICENSE IN LICENSE.md",
-	"engines": {
-		"vscode": "^0.10.1"
-	},
-	"categories": [
-		"Languages",
-		"Snippets"
-	],
-	"homepage": "https://github.com/Gimly/vscode-fortran/blob/master/README.md",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Gimly/vscode-fortran.git"
-	},
-	"icon": "images/icon.png",
-	"bugs": "https://github.com/Gimly/vscode-fortran/issues",
-	"contributes": {
-		"languages": [
-			{
-				"id": "fortran",
-				"aliases": [
-					"Fortran - Punchcard",
-					"fortran"
-				],
-				"extensions": [
-					".f",
-					".F",
-					".f77",
-					".F77",
-					".for",
-					".FOR",
-					".fpp",
-					".FPP"
-				],
-				"configuration": "./fortran.configuration.json"
-			},
-			{
-				"id": "fortran-modern",
-				"aliases": [
-					"Fortran - Modern"
-				],
-				"extensions": [
-					".f90",
-					".F90",
-					".f95",
-					".F95",
-					".f03",
-					".F03",
-					".f08",
-					".F08"
-				],
-				"configuration": "./modern.configuration.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "fortran-modern",
-				"scopeName": "source.fortran.modern",
-				"path": "./syntaxes/modern.tmLanguage"
-			},
-			{
-				"language": "fortran",
-				"scopeName": "source.fortran",
-				"path": "./syntaxes/fortran.tmLanguage"
-			}
-		],
-		"snippets": [
-			{
-				"language": "fortran-modern",
-				"path": "./snippets/fortran.json"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
-	},
-	"devDependencies": {
-		"typescript": "^1.6.2",
-		"vscode": "0.10.x"
-	}
+    "name": "fortran",
+    "displayName": "fortran",
+    "description": "An extension for VS Code which provides support for the Fortran language.",
+    "version": "0.1.0",
+    "publisher": "Gimly81",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "engines": {
+        "vscode": "^0.10.1"
+    },
+    "categories": [
+        "Languages",
+        "Snippets"
+    ],
+    "homepage": "https://github.com/Gimly/vscode-fortran/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Gimly/vscode-fortran.git"
+    },
+    "icon": "images/icon.png",
+    "bugs": "https://github.com/Gimly/vscode-fortran/issues",
+    "contributes": {
+        "languages": [
+            {
+                "id": "fortran",
+                "aliases": [
+                    "Fortran - Punchcard",
+                    "fortran"
+                ],
+                "extensions": [
+                    ".f",
+                    ".F",
+                    ".f77",
+                    ".F77",
+                    ".for",
+                    ".FOR",
+                    ".fpp",
+                    ".FPP"
+                ],
+                "configuration": "./fortran.configuration.json"
+            },
+            {
+                "id": "fortran-modern",
+                "aliases": [
+                    "Fortran - Modern"
+                ],
+                "extensions": [
+                    ".f90",
+                    ".F90",
+                    ".f95",
+                    ".F95",
+                    ".f03",
+                    ".F03",
+                    ".f08",
+                    ".F08"
+                ],
+                "configuration": "./modern.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "fortran-modern",
+                "scopeName": "source.fortran.modern",
+                "path": "./syntaxes/modern.tmLanguage"
+            },
+            {
+                "language": "fortran",
+                "scopeName": "source.fortran",
+                "path": "./syntaxes/fortran.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "fortran-modern",
+                "path": "./snippets/fortran.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+    },
+    "devDependencies": {
+        "typescript": "^1.6.2",
+        "vscode": "0.10.x"
+    }
 }
