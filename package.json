@@ -16,10 +16,6 @@
 		"type": "git",
 		"url": "https://github.com/Gimly/vscode-fortran.git"
 	},
-	// "activationEvents": [
-	// 	"onCommand:extension.sayHello"
-	// ],
-	// "main": "./out/src/extension",
 	"icon": "images/icon.png",
 	"bugs": "https://github.com/Gimly/vscode-fortran/issues",
 	"contributes": {
@@ -78,12 +74,6 @@
 				"path": "./snippets/fortran.json"
 			}
 		]
-		// "commands": [
-		// 	{
-		// 		"command": "extension.sayHello",
-		// 		"title": "Hello World"
-		// 	}
-		// ]
 	},
 	"scripts": {
 		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
