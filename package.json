@@ -2,7 +2,7 @@
     "name": "fortran",
     "displayName": "fortran",
     "description": "An extension for VS Code which provides support for the Fortran language.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "Gimly81",
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {
@@ -63,7 +63,7 @@
         ],
         "grammars": [
             {
-                "language": "fortran-modern",                
+                "language": "fortran-modern",
                 "scopeName": "source.fortran.modern",
                 "path": "./syntaxes/modern.tmLanguage"
             },
