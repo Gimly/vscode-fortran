@@ -6,7 +6,7 @@
     "publisher": "Gimly81",
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {
-        "vscode": "^0.10.1"
+        "vscode": "^1.16.0"
     },
     "categories": [
         "Languages",
@@ -17,6 +17,10 @@
         "type": "git",
         "url": "https://github.com/Gimly/vscode-fortran.git"
     },
+    "activationEvents": [
+        "onLanguage:fortran-modern"
+    ],
+    "main": "./out/src/extension",
     "icon": "images/icon.png",
     "bugs": "https://github.com/Gimly/vscode-fortran/issues",
     "contributes": {
@@ -59,7 +63,7 @@
         ],
         "grammars": [
             {
-                "language": "fortran-modern",
+                "language": "fortran-modern",                
                 "scopeName": "source.fortran.modern",
                 "path": "./syntaxes/modern.tmLanguage"
             },
@@ -77,11 +81,16 @@
         ]
     },
     "scripts": {
-        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^1.6.2",
-        "vscode": "0.10.x"
+        "typescript": "^2.5.3",
+        "vscode": "^1.1.5",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
     }
 }
